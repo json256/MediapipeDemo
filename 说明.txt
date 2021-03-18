@@ -1,0 +1,23 @@
+handtrackinggpu_deploy.jar 删除androidx android META-INF文件夹
+
+Duplicate class com.google.auto.value.AutoAnnotation found in modules auto-value-annotations-1.6.3 (com.google.auto.value:auto-value-annotations:1.6.3) and handtrackinggpu_deploy (handtrackinggpu_deploy.jar)
+Duplicate class com.google.auto.value.AutoOneOf found in modules auto-value-annotations-1.6.3 (com.google.auto.value:auto-value-annotations:1.6.3) and handtrackinggpu_deploy (handtrackinggpu_deploy.jar)
+Duplicate class com.google.auto.value.AutoValue found in modules auto-value-annotations-1.6.3 (com.google.auto.value:auto-value-annotations:1.6.3) and handtrackinggpu_deploy (handtrackinggpu_deploy.jar)
+Duplicate class com.google.auto.value.AutoValue$Builder found in modules auto-value-annotations-1.6.3 (com.google.auto.value:auto-value-annotations:1.6.3) and handtrackinggpu_deploy (handtrackinggpu_deploy.jar)
+Duplicate class com.google.auto.value.AutoValue$CopyAnnotations found in modules auto-value-annotations-1.6.3 (com.google.auto.value:auto-value-annotations:1.6.3) and handtrackinggpu_deploy (handtrackinggpu_deploy.jar)
+Duplicate class com.google.auto.value.extension.memoized.Memoized found in modules auto-value-annotations-1.6.3 (com.google.auto.value:auto-value-annotations:1.6.3) and handtrackinggpu_deploy (handtrackinggpu_deploy.jar)
+Duplicate class com.google.common.util.concurrent.ListenableFuture found in modules handtrackinggpu_deploy (handtrackinggpu_deploy.jar) and listenablefuture-1.0 (com.google.guava:listenablefuture:1.0)
+
+E:\Deposit\Gradle\caches\modules-2\files-2.1\androidx.camera\camera-core\1.0.0-beta12\45eb7a20f4a900a8afe4b518cba6ea0b7eb1c71b\camera-core-1.0.0-beta12.module
+根据该文件查找"dependencies"
+    implementation 'com.google.guava:listenablefuture:1.0'
+    implementation 'com.google.auto.value:auto-value-annotations:1.6.3'
+    implementation 'androidx.concurrent:concurrent-futures:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+
+rk3399 Android8.1 默认前置 /dev/video0
+rk3399 Android9.0 默认后置 /dev/video10
+camera-core-1.0.0-beta10 CameraId parseInt有问题
+camera-core-1.0.0-beta12 修改CameraSelector.java 92行 注释掉判断前置后置代码 重新打包.jar .arr
+
+内存泄漏0.8.2版本修复
